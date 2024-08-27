@@ -9,6 +9,9 @@ class Tag(models.Model):
     def __str__(self):
         return self.value
 
+    class Meta:
+        ordering = ["value"]
+
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 
